@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Countries Search Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="popup-container">
+            <div class="popup">
+                <input type="search" id="search" class="search-input" placeholder="Search">
+                <div class="divider"></div>
+                <div class="actions d-flex">
+
+                    <div class="d-flex">
+
+                        <label class="switch">
+                            <input type="checkbox" id="toggleCountries">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="switch-label">Show selected only</span>
+                    </div>
+                    <div class="clear-all" onclick="clearAll()">Clear all</div>
+
+                </div>
+                <div class="list">
+                    <!-- <ul>
+                        <li>
+                            <label for="AF">
+                                <input type="checkbox" value="AF" name="country" id="AF"><span>Afghanistan</span>
+                            </label>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="divider"></div>
+                <div class="actions d-flex">
+                    <div class="save" onclick="save()"><button>Save</button></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="output"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
